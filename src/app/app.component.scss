@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+input {
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+}
+button {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  width: 50px;
+  font-size: 20px;
+  border: none;
+  margin: 5px;
+  justify-content: flex-end;
+
+}
+select {
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+
+.main {
+  display: flex;
+
+  .parent-div-1 {
+    width: 400px;
+    height: 50%;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+  }
+
+  .parent-div-2 {
+    width: 400px;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+
+  .parent-div-3 {
+    width: 400px;
+    height: 50%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+}
+
+.main ul {
+  height: 50px;
+  width: 300px;
+  margin: 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.child-div-1 {
+  width: 400px;
+  height: 30px;
+  background-color: rgba(217, 217, 217, 0.699);
+  font-size: 20px;
+}
+.child-div-2 {
+  width: 400px;
+  height: 30px;
+  background-color: rgba(217, 217, 217, 0.699);
+  font-size: 20px;
+}
+p {
+  margin: 10px;
+}
+.child-div-3 {
+  width: 400px;
+  height: 30px;
+  background-color: rgba(217, 217, 217, 0.699);
+  font-size: 20px;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
