@@ -2,89 +2,88 @@
   padding: 0;
   margin: 0;
 }
-input {
-  width: 150px;
-  height: 30px;
-  font-size: 15px;
+html {
+  font-size: 62.5%;
 }
-button {
+button{
   background-color: blue;
   color: white;
   border-radius: 5px;
-  height: 30px;
-  width: 50px;
-  font-size: 20px;
+  width: 5rem;
+  font-size: 2rem;
   border: none;
-  margin: 5px;
   justify-content: flex-end;
-
 }
-select {
-  height: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 15px;
+header{
+  display: flex;
+  gap: 2rem;
+  height: 3rem;
+  margin: 1rem 0 1rem 2rem;
+  input {
+    width: 15rem;
+    font-size: 15px;
+    padding-left:1rem;
+  }
+
+  select {
+    padding-left:7px;
+    font-size:15px;
+  }
 }
 
 .main {
   display: flex;
-
-  .parent-div-1 {
-    width: 400px;
+  gap: 2rem;
+  margin-left: 2rem;
+  .parent-div-1,.parent-div-2,.parent-div-3 {
+    width: 30%;
     height: 50%;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
-  }
-
-  .parent-div-2 {
-    width: 400px;
-    height: 50%;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-left: 20px;
-  }
-
-  .parent-div-3 {
-    width: 400px;
-    height: 50%;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-left: 20px;
+    .child-div-1,.child-div-2,.child-div-3 {
+      padding-left: 2rem;
+      width: 100;
+      height: 3rem;
+      background-color: rgba(217, 217, 217, 0.7);
+      font-size: 2rem;
+    }
   }
 }
 
 .main ul {
-  height: 50px;
-  width: 300px;
-  margin: 20px;
+  height: 5rem;
   border: 1px solid black;
+  border-radius: 5px;
+  margin: 2rem;
   display: flex;
   justify-content: space-between;
-}
-.child-div-1 {
-  width: 400px;
-  height: 30px;
-  background-color: rgba(217, 217, 217, 0.699);
-  font-size: 20px;
-}
-.child-div-2 {
-  width: 400px;
-  height: 30px;
-  background-color: rgba(217, 217, 217, 0.699);
-  font-size: 20px;
+  padding-left: 2rem ;
+  padding-top: 2rem;
+  .item{
+    flex-direction: row;
+    justify-content: space-between;
+    .itemopt1, .itemopt2, .itemopt3{
+      color: white;
+      margin-top: 1rem;
+      background-color: blue;
+      opacity: 0.7;
+      border-radius: 3px;
+    }
+    .buttons{
+      .btnsec{
+        margin-left: 2rem;
+      }
+  }
+  }
 }
 p {
-  margin: 10px;
+  padding: 1rem 0 1rem 2rem;
 }
-.child-div-3 {
-  width: 400px;
-  height: 30px;
-  background-color: rgba(217, 217, 217, 0.699);
-  font-size: 20px;
-}
+
 .red {
   background-color: red;
 }
 .green {
   background-color: green;
 }
+

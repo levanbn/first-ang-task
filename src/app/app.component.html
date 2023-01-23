@@ -1,29 +1,29 @@
-<input type="text"  placeholder="add task" #task [(ngModel)] = "taskname"/>
-<select [(ngModel)]="optName">
-<option value="{{opt.name}}" *ngFor="let opt of options" >{{ opt.name }}</option>
-</select>
-<button (click)="addtask(task.value)">add</button>
-<br />
-<br>
-
+<header>
+  <input type="text"  placeholder="Task Name" #task [(ngModel)] = "taskname"/>
+  <select [(ngModel)]="optName">
+  <option value="{{opt.name}}" *ngFor="let opt of options" >{{ opt.name }}</option>
+  </select>
+  <button  (click)="addtask(task.value)">add</button>
+</header>
 <div class="main">
-
   <div class="parent-div-1">
     <div class="child-div-1">todo</div>
     <p *ngIf="list.length == 0">list is empty</p>
     <div *ngFor="let item of list; let i = index">
       <ul>
+        <div class="item">
         {{
           item.name
         }}
-        <div>
-        {{
-          item.opts
-        }}
-      </div>
+           <div class="itemopt1">
+          {{
+            item.opts
+          }}
+        </div>
+        </div>
         <div class="buttons">
-          <button (click)="removetask(i)" [ngClass]="buttoncolors[1]">x</button>
-          <button (click)="addtoProgress(item.name, i)">></button>
+          <button  (click)="removetask(i)" [ngClass]="buttoncolors[1]">x</button>
+          <button class="btnsec" (click)="addtoProgress(item.name, i)">></button>
         </div>
       </ul>
     </div>
@@ -34,22 +34,23 @@
     <p *ngIf="secondlist.length == 0">list is empty</p>
     <div *ngFor="let item of secondlist; let i = index">
       <ul>
-        {{
-          item.name
-        }}
-        <div>
+        <div class="item">
           {{
-            item.opts
+            item.name
           }}
-        </div>
+             <div class="itemopt2">
+            {{
+              item.opts
+            }}
+          </div>
+          </div>
+
         <div class="buttons">
           <button
             (click)="secondToFirst(item.name, i)"
             [ngClass]="buttoncolors[0]"
-          >
-            <
-          </button>
-          <button (click)="addtoDone(item.name, i)">></button>
+          ><</button>
+          <button class="btnsec" (click)="addtoDone(item.name, i)">></button>
         </div>
       </ul>
     </div>
@@ -60,14 +61,16 @@
     <p *ngIf="thirdlist.length == 0">list is empty</p>
     <div *ngFor="let item of thirdlist; let i = index">
       <ul>
-        {{
-          item.name
-        }}
-        <div>
+        <div class="item">
           {{
-            item.opts
+            item.name
           }}
-        </div>
+             <div class="itemopt3">
+            {{
+              item.opts
+            }}
+          </div>
+          </div>
         <div class="buttons">
           <button (click)="addfromDonetoProgress(item.name, i)"><</button>
         </div>
